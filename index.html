@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rye Akature — DevOps Engineer</title>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap)" rel="stylesheet"/>
+  <style>
+    :root {
+      --font-body:'DM Sans',sans-serif;
+      --font-display:'DM Serif Display',serif;
+      --font-mono:'DM Mono',monospace;
+      --bg:#0b1114;
+      --overlay:rgba(0,0,0,0.75);
+      --text:#eef4f2;
+      --text2:#c8ddd8;
+      --accent:#00d4ff;
+      --card:rgba(255,255,255,0.05);
+      --border:rgba(255,255,255,0.1);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:var(--font-body);
+      color:var(--text);
+      background:linear-gradient(var(--overlay),var(--overlay)),
+      url('[images.unsplash.com](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80)');
+      background-size:cover;
+      background-attachment:fixed;
+    }
+
+    .page{max-width:1000px;margin:auto;padding:60px 20px}
+
+    .hero{text-align:center;margin-bottom:60px}
+
+    .hero h1{
+      font-family:var(--font-display);
+      font-size:3.5rem;
+      background:linear-gradient(90deg,#00d4ff,#7ecfc0);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{margin-top:10px;color:var(--text2)}
+
+    .contacts{margin-top:20px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+
+    .contact-pill{
+      padding:8px 14px;
+      border:1px solid var(--border);
+      border-radius:20px;
+      font-size:.8rem;
+      color:var(--text2);
+      text-decoration:none;
+    }
+
+    section{margin-bottom:50px}
+
+    h2{margin-bottom:15px;color:var(--accent)}
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      padding:20px;
+      border-radius:12px;
+    }
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+
+    .tag{
+      padding:6px 10px;
+      border-radius:10px;
+      background:rgba(0,212,255,0.1);
+      font-size:.75rem;
+    }
+
+    .timeline{display:flex;flex-direction:column;gap:20px}
+
+    .job{background:var(--card);padding:20px;border-radius:12px;border:1px solid var(--border)}
+
+    .job h3{margin-bottom:8px}
+    .job .meta{font-size:.8rem;color:var(--text2);margin-bottom:10px}
+
+    footer{text-align:center;margin-top:40px;color:var(--text2);font-size:.8rem}
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="hero">
+    <h1>Rye Akature</h1>
+    <p>DevOps Engineer | Cloud Architect | Automation Specialist</p>
+
+    <div class="contacts">
+      <a class="contact-pill" href="tel:+14709399518">📞 +1 (470) 939-9518</a>
+      <a class="contact-pill" href="mailto:akaturerye@gmail.com">✉ akaturerye@gmail.com</a>
+      <a class="contact-pill" href="#">📍 Atlanta, Georgia</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      I am a DevOps Engineer with over <strong>6 years of professional experience</strong> in designing, automating, and optimizing cloud infrastructure and deployment pipelines. I specialize in creating scalable, secure, and fault-tolerant systems leveraging tools like AWS, Kubernetes, Terraform, and Ansible. My goal is to deliver high-availability environments that reduce manual work and accelerate software delivery.
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="card skills">
+      <span class="tag">AWS</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Kubernetes</span>
+      <span class="tag">Terraform</span>
+      <span class="tag">Ansible</span>
+      <span class="tag">Jenkins</span>
+      <span class="tag">GitHub Actions</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Monitoring</span>
+      <span class="tag">CI/CD</span>
+      <span class="tag">Python</span>
+      <span class="tag">Networking</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="job">
+        <h3>Senior DevOps Engineer — CloudScale Technologies</h3>
+        <div class="meta">Jan 2022 – Present | Atlanta, GA</div>
+        <p>Led a team of engineers in designing and maintaining AWS-based environments using Terraform and Kubernetes. Implemented automated CI/CD pipelines with Jenkins and GitHub Actions, improving deployment speed by 40%. Introduced IaC governance and improved observability using Prometheus and Grafana.</p>
+      </div>
+
+      <div class="job">
+        <h3>DevOps Engineer — NovaCloud Solutions</h3>
+        <div class="meta">Jun 2019 – Dec 2021 | Remote</div>
+        <p>Developed end-to-end deployment automation for SaaS platforms across AWS and Azure. Created containerized microservices using Docker and EKS. Collaborated with development teams to optimize application scalability and resource utilization.</p>
+      </div>
+
+      <div class="job">
+        <h3>Cloud Engineer — BrightIQ Systems</h3>
+        <div class="meta">Jan 2018 – May 2019 | Atlanta, GA</div>
+        <p>Provisioned and secured cloud resources using Terraform. Built monitoring dashboards and alerting strategies using CloudWatch. Automated patch management and infrastructure backups to enhance reliability and compliance.</p>
+      </div>
+
+      <div class="job">
+        <h3>Linux Systems Administrator — DataForge IT</h3>
+        <div class="meta">Feb 2016 – Dec 2017 | Atlanta, GA</div>
+        <p>Configured and maintained hundreds of Linux servers, automated deployments through Bash and Ansible, and handled performance tuning and incident recovery for production systems.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Qualifications</h2>
+    <div class="card">
+      <ul style="list-style:none;line-height:1.7">
+        <li><strong>Bachelor of Science in Computer Science</strong> — Georgia Institute of Technology (2015)</li>
+        <li><strong>AWS Certified Solutions Architect – Associate</strong> (2022)</li>
+        <li><strong>Certified Kubernetes Administrator (CKA)</strong> — CNCF (2021)</li>
+        <li><strong>HashiCorp Certified: Terraform Associate</strong> (2020)</li>
+        <li><strong>Linux Professional Institute Certification (LPIC-1)</strong> (2017)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Rye Akature | DevOps Engineer
+  </footer>
+
+</div>
+
+</body>
+</html>
