@@ -13,7 +13,12 @@ jobs:
       - name: Build image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/cipotfolio .
       - name: List images 
-        run: docker images   
+        run: docker images 
+          uses: docker/login-action@v3
+  with:
+      registry: ghcr.io
+    username: ${{ github.actor }}
+    password: ${{ secrets.GITHUB_TOKEN }} 
 
         
            
