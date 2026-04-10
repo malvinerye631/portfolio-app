@@ -6,14 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        - name: uptime
-          run: uptime
-        - name: check no of processors
-          run: nproc
+        - name: Checkout repository code
+          uses: actions/checkout@v4
+        - name: Build image
+          run: docker build -t malvinerye/cipotfolio .
+        - name: List images  
+          run: docker images
+           
 
-  test:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-        - name: hello
-          run: echo "Hello!"
+    
+
+
+ 
